@@ -5,3 +5,4 @@ _site
 *~
 node_modules
 sauce_connect.log
+dist

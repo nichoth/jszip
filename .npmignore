@@ -6,3 +6,7 @@ documentation
 Gruntfile.js
 index.html
 test
+!dist
+node_modules
+.env
+.DS_Store

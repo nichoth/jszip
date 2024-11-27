@@ -1,8 +1,8 @@
 {
-  "name": "jszip",
+  "name": "@nichoth/jszip",
   "version": "3.10.1",
   "author": "Stuart Knightley <stuart@stuartk.com>",
-  "description": "Create, read and edit .zip files with JavaScript http://stuartk.com/jszip",
+  "description": "Create, read and edit .zip files with JavaScript",
   "scripts": {
     "test": "npm run test-node && npm run test-browser && tsc",
     "test-node": "qunit --require ./test/helpers/test-utils.js --require ./test/helpers/node-test-utils.js test/asserts/",
@@ -10,7 +10,10 @@
     "benchmark": "npm run benchmark-node && npm run benchmark-browser",
     "benchmark-node": "node test/benchmark/node.js",
     "benchmark-browser": "node test/run.js --benchmark",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "build": "grunt build",
+    "preversion": "npm run lint",
+    "prepublishOnly": "npm run build"
   },
   "contributors": [
     {
